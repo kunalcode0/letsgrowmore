@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+:root{
+  
+    --color-1:#eef1f6;
+    --color-2:#d3e1e2;
+    --color-3:#a5dbdd;
+    --color-4:#407c87;
+    --color-5:#6BBD99;
+  }
+body{
+    background-color: var(--color-1);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.heading{
+    color: var(--color-4);
+    font-weight: 600;
+    font-size: 2rem;
+
+}
+label{
+    font-size: 1.5rem;
+    color: #a5dbdd;
+}
+.text{
+    border-radius: .5rem;
+    width: 40rem;
+    font-size: 1.1rem;
+}
+
+#my-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: .5rem;
+    margin-top: 1rem;
+}
+.sumbit-btn{
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    margin-top: .5rem;
+    background-color: var(--color-5);
+    color: #fff;
+    border-radius: .5rem;
+    border: 2px solid #fff;
+}
+.sumbit-btn:hover{
+    background-color: #fff;
+    color: var(--color-5);
+}
+.sumbit-btn:focus{
+    box-shadow: #d3e1e2;
+}
+.tasks{
+    display: grid;
+    grid-template-columns:  auto auto;
+    gap: 1rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    word-wrap: break-word;
+}
+.card{
+    padding: 2rem 3rem;
+    background-color: #fff;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+.p-1, .p-3{
+    font-size: 1.5rem;
+margin-top: .3rem;
+margin-bottom: .3rem;
+color: #407c87;
+}
+.p-2, .p-4{
+    font-size: 1.2rem;
+    color: black;
+}
+.dlt-btn{
+padding: .8rem 1.5rem;
+font-size: 1.2rem;
+margin-top: 1.5rem;
+color: var(--color-5);
+background-color: #fff;
+border-radius: .5rem;
+border: 2px solid var(--color-5);
+}
+.dlt-btn:hover{
+color: #fff;
+background-color: var(--color-5);
+}
+
+@media screen  and (max-width:780px) {
+
+    .text{
+        width: 30rem;
+    }
+    .tasks{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .card{
+        padding: 1rem 1rem;
+    }
+}
+
+
+@media screen  and (max-width:510px) {
+    .text{
+        width: 20rem;
+        height: 10rem;
+    }
+    
+}
+
+@media screen  and (max-width:330px) {
+    .text{
+        width: 15rem;
+    }
+    .tasks{
+        padding: 0px;
+    }
+}
+
+
+
